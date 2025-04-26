@@ -1,0 +1,70 @@
+/* src/components/features/SupportFeatures.css */
+
+.support-features-section {
+  background-color: #FED8A6;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.support-cards-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.support-card {
+  background-color: #E9D7C0;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.support-card h3 {
+  font-family: 'Belgrano', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.support-card p {
+  font-family: 'Bellefair', serif;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.support-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .support-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .support-card {
+    width: 90%;
+  }
+}

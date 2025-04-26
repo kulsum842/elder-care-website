@@ -1,0 +1,169 @@
+/* Fonts */
+.logo {
+  font-family: 'Turret Road', sans-serif;
+}
+
+.navbar a,
+.auth-links,
+.logout-button,
+.username {
+  font-family: 'Ubuntu Mono', monospace;
+  text-decoration: none;
+}
+
+/* Colors */
+:root {
+  --brown: #9B7D61;
+  --peach: #DAA38F;
+  --white: #ffffff;
+}
+
+/* Page Load Animation */
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Navbar Container */
+.navbar {
+  width: 100%;
+}
+
+/* Top Bar */
+.top-bar {
+  position: relative;
+  background-color: var(--brown);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.auth-links a,
+.auth-links span,
+.username,
+.logout-button {
+  color: var(--white);
+}
+
+/* Bottom Bar */
+.bottom-bar {
+  background-color: var(--peach);
+  display: flex;
+  gap: 20px;
+  padding: 8px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-bar a {
+  color: var(--white);
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bottom-bar a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effects */
+.navbar a:not(.logo-link),
+.auth-links a,
+.logout-button {
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a:not(.logo-link):hover,
+.auth-links a:hover,
+.logout-button:hover {
+  color: var(--brown);
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.navbar a:not(.logo-link)::after,
+.auth-links a::after,
+.logout-button::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: var(--white);
+  transition: width 0.3s ease;
+}
+
+.navbar a:not(.logo-link):hover::after,
+.auth-links a:hover::after,
+.logout-button:hover::after {
+  width: 100%;
+}
+
+/* Logout Button */
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+  }
+
+  .auth-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .bottom-bar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

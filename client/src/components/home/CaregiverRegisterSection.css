@@ -1,0 +1,135 @@
+.caregiver-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 30px;
+  background-color: #FED8A6;
+  gap: 40px;
+}
+
+.caregiver-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.caregiver-content {
+  max-width: 600px;
+}
+
+.caregiver-title {
+  font-family: 'BioRhyme', serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+.caregiver-text {
+  font-family: 'Bellefair', serif;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.caregiver-steps {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 40px 0;
+  gap: 100px;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4A2706;
+  width: 100px;
+}
+
+/* Adjust step title position */
+.step:nth-child(2) {
+  flex-direction: column-reverse; /* step title above the circle */
+  margin-top: 40px; /* still keep the V shape */
+}
+
+.caregiver-circle {
+  background-color: #4A2706;
+  color: white;
+  font-family: 'Bevan', serif; /* Updated font */
+  font-size: 34px; /* 85% of 40px */
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.step-title {
+  font-family: 'Bevan', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+/* Connector lines */
+.line {
+  position: absolute;
+  top: 35px; /* aligns with top of center circle */
+  width: 90px;
+  height: 3px;
+  background-color: #4A2706;
+  z-index: 0;
+  margin-top: 40px;
+}
+
+.left-line {
+  left: calc(50% - 135px); /* adjust based on step spacing */
+  transform: rotate(25deg);
+  transform-origin: left center;
+}
+
+.right-line {
+  right: calc(50% - 135px);
+  transform: rotate(-25deg);
+  transform-origin: right center;
+}
+
+.caregiver-register-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #4A2706;
+  color: white;
+  text-decoration: none;
+  font-family: 'Bevan', serif;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.caregiver-register-button:hover {
+  background-color: #321b03;
+}
+
+.caregiver-image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.caregiver-image {
+  width: 400px;
+  max-width: 100%;
+}

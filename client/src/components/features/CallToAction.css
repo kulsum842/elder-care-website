@@ -1,0 +1,75 @@
+/* src/components/features/CallToAction.css */
+
+.cta-section {
+    background-color: #FED8A6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+    flex-wrap: wrap;
+  }
+  
+  .cta-text {
+    flex: 1 1 400px;
+    padding: 1.5rem;
+  }
+  
+  .cta-text h2 {
+    font-family: 'BioRhyme', serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .cta-text p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+  
+  .cta-button {
+    background-color: #4A2706;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #3a1f05;
+  }
+  
+  .cta-image {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .cta-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .cta-section {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .cta-text {
+      padding: 0;
+    }
+  
+    .cta-button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

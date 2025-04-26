@@ -1,0 +1,140 @@
+.plan-faq-section {
+    background-color: #FED8A6;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .plan-faq-title {
+    font-family: 'BioRhyme', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .plan-faq-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .plan-faq-item {
+    background-color: #E5BFB1;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .plan-faq-item:hover {
+    background-color: #dfb0a3;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .plan-faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bevan', cursive;
+    font-size: 1.2rem;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+  
+  .plan-faq-toggle-icon {
+    font-size: 1.5rem;
+    transition: transform 0.4s ease;
+  }
+  
+  .plan-faq-item.open .plan-faq-toggle-icon {
+    transform: rotate(180deg);
+  }
+  
+  .plan-faq-answer {
+    margin-top: 1rem;
+    font-family: 'Inria Serif', serif;
+    font-size: 1rem;
+    text-align: left;
+    animation: slideFadeIn 0.4s ease forwards;
+    opacity: 0;
+  }
+  
+  .plan-faq-item.open .plan-faq-answer {
+    opacity: 1;
+  }
+  
+  .plan-faq-footer {
+    margin-top: 2rem;
+    font-family: 'Belgrano', serif;
+    font-size: 1.1rem;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  /* 🔥 Click Here Link Hover Effects */
+  .plan-faq-footer a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .plan-faq-footer a::after {
+    content: "→";
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem;
+    color: #000;
+  }
+  
+  .plan-faq-footer a:hover {
+    color: #4A2706;
+  }
+  
+  .plan-faq-footer a:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .plan-faq-title {
+      font-size: 2rem;
+    }
+  
+    .plan-faq-question {
+      font-size: 1rem;
+    }
+  }
+  

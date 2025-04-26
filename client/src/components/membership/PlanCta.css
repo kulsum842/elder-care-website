@@ -1,0 +1,45 @@
+.plan-cta {
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .plan-cta-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .plan-cta-image {
+    width: 120px;
+    height: auto;
+  }
+  
+  .plan-cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .plan-cta-text h2 {
+    font-family: 'BioRhyme', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .plan-cta-button {
+    font-family: 'Young Serif', serif;
+    font-size: 1rem;
+    background-color: #4A2706;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .plan-cta-button:hover {
+    background-color: #3a1f05;
+  }
+  

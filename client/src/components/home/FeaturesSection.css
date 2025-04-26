@@ -1,0 +1,101 @@
+.home-features-section {
+  background: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+.home-section-title {
+  font-family: 'BioRhyme', serif;
+  font-size: 32px;
+  margin: 15px;
+  letter-spacing: 1.5px;
+}
+
+.home-features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #E9D7C0;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.home-features-card {
+  background: #FED8A6;
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-features-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-feature-icon {
+  width: 90px;
+  height: 90px;
+}
+
+.home-feature-title {
+  font-family: 'Belgrano', serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  letter-spacing: 1px;
+}
+
+.home-feature-description {
+  font-family: 'Bellefair', serif;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.home-explore-link {
+  font-family: 'Belgrano', serif;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  margin-top: 30px; /* Add space between cards and link */
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.home-explore-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* 🔄 Responsive Design */
+@media (max-width: 768px) {
+  .home-features-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .home-features-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .home-section-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .home-explore-link {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,59 @@
+.contact-details-section {
+    background-color: #E9D7C0;
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+  
+  .contact-details-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .contact-details-item {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .contact-details-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #94ABA4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+    transition: transform 0.3s ease; /* Smooth hover animation */
+  }
+  
+  .contact-details-icon-img {
+    color: #ffffff;
+    font-size: 40px;
+  }
+  
+  /* Hover effect on icon */
+  .contact-details-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .contact-details-title {
+    font-family: 'BioRhyme', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+  }
+  
+  .contact-details-link,
+  .contact-details-text {
+    font-family: 'Unna', serif;
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .contact-details-link {
+    text-decoration: underline;
+  }
+  

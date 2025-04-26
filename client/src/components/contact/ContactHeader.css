@@ -1,0 +1,23 @@
+.contact-header-section {
+    padding: 0.3rem;
+    margin: 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .contact-header-title {
+    font-family: 'Unlock', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    color: #000000;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-header-subtext {
+    font-family: 'Unna', serif;
+    font-size: 1.3rem;
+    color: #333333;
+  }
+  

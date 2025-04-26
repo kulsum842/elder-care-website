@@ -1,0 +1,71 @@
+.marketplace-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 4rem;
+  position: relative; /* Helps Swiper behave within container bounds */
+  z-index: 1;
+  margin-top: 4rem;
+  z-index: 1;
+}
+  .marketplace-title {
+    font-family: 'BioRhyme', serif;
+    font-size: 2.5rem;
+    letter-spacing: 15%;
+    margin-bottom: 3rem;
+    color: #000000;
+  }
+  
+  .marketplace-swiper {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .marketplace-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #daa38f;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .card-image {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-text {
+    text-align: left;
+    max-width: 500px;
+  }
+  
+  .card-title {
+    font-family: 'Peralta', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  
+  .card-content {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  /* Pagination Dots */
+  .swiper-pagination-bullet {
+    background-color: #000000;
+  }
+  
+  /* Navigation Arrows */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000000;
+  }
+  

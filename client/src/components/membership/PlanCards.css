@@ -1,0 +1,133 @@
+.plan-cards-section {
+    background-color: #E9D7C0;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .plan-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .individual-plan-card {
+    background-color: #92ADA4;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
+  }
+  
+  .individual-plan-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1), transparent 70%);
+    transform: rotate(25deg);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: -1;
+  }
+  
+  .individual-plan-card:hover::before {
+    opacity: 1;
+  }
+  
+  .individual-plan-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  .plan-card-title {
+    font-family: 'Young Serif', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .plan-card-price {
+    font-family: 'Young Serif', serif;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #000;
+    transition: color 0.3s ease;
+  }
+  
+  .individual-plan-card:hover .plan-card-price {
+    color: #331A04;
+  }
+  
+  .plan-card-per-month {
+    font-family: 'Inria Serif', serif;
+    font-size: 1rem;
+  }
+  
+  .plan-card-features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+  
+  .plan-card-feature-item {
+    font-family: 'Inria Serif', serif;
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .plan-card-feature-item::before {
+    content: "✔";
+    color: #2E5A47;
+    position: absolute;
+    left: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .individual-plan-card:hover .plan-card-feature-item::before {
+    color: #1B3A2B;
+  }
+  
+  .plan-card-button {
+    background-color: #4A2706;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan-card-button:hover {
+    background-color: #331A04;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .plan-cards-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

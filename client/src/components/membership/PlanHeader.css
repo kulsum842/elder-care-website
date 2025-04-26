@@ -1,0 +1,27 @@
+/* src/components/features/PlanHeader.css */
+
+.plan-header-section {
+    background: linear-gradient(to right, #92ADA4, #FED8A6);
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+  
+  .plan-title {
+    font-family: 'Unlock', cursive;
+    letter-spacing: 0.2em;
+    font-size: 3.5rem;
+    color: #000;
+    margin: 0rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .plan-subtext {
+    font-family: 'Unna', serif;
+    font-size: 1.8rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  

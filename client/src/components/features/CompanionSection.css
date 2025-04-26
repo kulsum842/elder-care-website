@@ -1,0 +1,103 @@
+.companion-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .companion-content {
+    flex: 1;
+    padding-right: 2rem;
+    min-width: 300px;
+    position: relative; /* Enables absolutely positioned children */
+    z-index: 2; /* Ensure content is above background shapes */
+  }
+  
+  .companion-title {
+    font-family: 'BioRhyme', serif;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    position: relative; /* Keep titles above circles */
+    z-index: 3;
+  }
+  
+  .companion-subtitle {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .companion-image-container {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+    z-index: 2;
+  }
+  
+  .companion-image {
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* Decorative background shapes */
+  .circle {
+    position: absolute;
+    background-color: #FED8A6;
+    z-index: 1; /* Behind text */
+    opacity: 0.7;
+  }
+  
+  .circle.one {
+    width: 200px;
+    height: 200px;
+    top: -40px;
+    left: -30px;
+    border-radius: 50%;
+  }
+  
+  /* Ellipse shape */
+  .circle.two {
+    width: 300px;
+    height: 180px; /* Height differs from width = ellipse */
+    bottom: -50px;
+    right: -60px;
+    border-radius: 50% / 40%; /* Makes it elliptical */
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .companion-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .companion-content {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .companion-image {
+      max-width: 300px;
+    }
+  
+    .circle.one {
+      top: -20px;
+      left: 15%;
+    }
+  
+    .circle.two {
+      bottom: -30px;
+      right: 10%;
+    }
+  }
+  

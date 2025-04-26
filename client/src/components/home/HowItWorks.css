@@ -1,0 +1,156 @@
+/* Wrapper for the whole section */
+.how-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #92ada4;
+    color: #9b7d61;
+    padding: 60px 20px;
+    font-family: 'Bellefair', serif;
+    gap: 40px;
+    margin: 0; /* Top and bottom margin */
+  }
+  
+  /* Left side (Title, Subtitle, Description, Button) */
+  .how-left {
+    flex: 1;
+    min-width: 280px;
+    max-width: 48%;
+    padding: 10px; /* Left padding */
+  }
+  
+  .how-title {
+    font-family: 'BioRhyme', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px; /* Enhanced letter spacing */
+    margin-bottom: 20px;
+  }
+  
+  .how-subtitle {
+    font-family: 'Bevan', serif;
+    font-style: italic;
+    font-weight: 1400; /* Doubled font weight */
+    font-size: 1.1rem;
+    margin: 10px 0; /* 10px top and bottom */
+    letter-spacing: 2px; /* Enhanced letter spacing */
+  }
+  
+  .how-desc {
+    font-family: 'Bellefair', serif;
+    font-size: 1.1rem; /* Increased font size */
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .how-button {
+    padding: 12px 30px; /* Increase padding to make the button larger */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+    background-color: #9b7d61;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .how-button:hover {
+    background-color: #9b7d61;
+    transform: scale(1.1); /* Grow the button slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+  }
+  
+  .how-button:focus {
+    outline: none; /* Remove outline when button is focused */
+    border: 2px solid #9b7d61; 
+  }
+  
+  .how-button:active {
+    transform: scale(1); /* Button returns to normal size when clicked */
+    background-color: #9b7d61; /* Even darker green on click */
+  }
+  
+  
+  /* Right side (Step-by-step section) */
+  .how-right {
+    flex: 1;
+    min-width: 280px;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 10px 0 10px; /* Including left padding */
+  }
+  
+  /* Each step block */
+  .how-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 0px; /* Added margin to ensure consistent spacing between steps */
+  }
+  
+
+  
+  /* Step number circle */
+  .how-circle {
+    background-color: #9b7d61;
+    color: white;
+    font-family: 'Bevan', serif; /* Updated font */
+    font-size: 34px; /* 85% of 40px */
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Vertical line below each circle (with spacing and thicker weight) */
+  .how-circle::after {
+    content: '';
+    position: absolute;
+    width: 4px; /* Increased line weight */
+    height: 60px;
+    background-color: #9b7d61;
+    top: calc(100% + 10px); /* Added space between circle and line */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .how-step:last-child .how-circle::after {
+    display: none;
+  }
+  
+  /* Text container for each step */
+  .how-step-text {
+    flex: 1;
+  }
+
+  
+  /* Step title */
+  .how-step-title {
+    font-family: 'Bevan', serif;
+    font-style: italic;
+    font-weight: 1400; /* Doubled font weight */
+    font-size: 1rem;
+    letter-spacing: 1.5px; /* Updated letter spacing */
+    margin: 7px 0; /* Updated top and bottom margin */
+  }
+  
+  
+  /* Step description */
+  .how-step-desc {
+    font-family: 'Bellefair', serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
